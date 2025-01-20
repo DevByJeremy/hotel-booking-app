@@ -35,7 +35,7 @@ export const InputWithPopUp = ({
         {title}
       </Typography>
       <Box sx={{ display: "flex" }} onClick={() => handleOpen(true)}>
-        <Typography mr={10}>{value}</Typography>
+        <Typography mr={10} minWidth={minWidth}>{value}</Typography>
         {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
       </Box>
       {open && (

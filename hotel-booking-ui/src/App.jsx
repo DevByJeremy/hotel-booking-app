@@ -1,6 +1,6 @@
 import "./App.css";
-import Navbar from "./components/navbar";
 import { Box, CssBaseline } from "@mui/material";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
