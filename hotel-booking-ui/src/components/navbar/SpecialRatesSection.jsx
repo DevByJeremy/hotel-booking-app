@@ -1,5 +1,4 @@
 import { Box, IconButton, TextField, Typography } from "@mui/material";
-import React from "react";
 import CircleOutlinedIcon from "@mui/icons-material/CircleOutlined";
 import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import { InputWithPopUp } from "./InputWithPopUp";

@@ -1,16 +1,9 @@
-import React from "react";
 import AppBar from "@mui/material/AppBar";
 import MenuIcon from "@mui/icons-material/Menu";
-import {
-  Box,
-  Button,
-  IconButton,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { Box, Button, IconButton, Toolbar, Typography } from "@mui/material";
 import HeaderSection from "./HeaderSection";
 
-const Navbar = () => {
+const Navbar = ({ isFixed }) => {
   const navItems = ["Home", "Rooms", "Bookings", "About", "Contact"];
 
   return (
@@ -37,13 +30,9 @@ const Navbar = () => {
           </Box>
         </Toolbar>
       </AppBar>
-      <HeaderSection />
+      <HeaderSection isFixed={isFixed} />
     </Box>
   );
 };
-
-
-
-
 
 export default Navbar;

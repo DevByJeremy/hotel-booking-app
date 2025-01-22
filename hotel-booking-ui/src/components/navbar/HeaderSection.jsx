@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import SelectRoomsAndGuest from "./SelectRoomsAndGuest";
 import DateRange from "./DateRange";
 import SpecialRatesSection from "./SpecialRatesSection";
@@ -8,27 +8,16 @@ import StarHalfIcon from "@mui/icons-material/StarHalf";
 import CircleIcon from "@mui/icons-material/Circle";
 import { addDays } from "date-fns";
 
-const HeaderSection = () => {
-  const [isFixed, setIsFixed] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 110) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+const HeaderSection = ({ isFixed }) => {
   return (
-    <Box sx={{ position: isFixed ? "fixed" : "static", width: 1, top: 0 }}>
+    <Box
+      sx={{
+        position: isFixed ? "fixed" : "static",
+        width: 1,
+        top: 0,
+        zIndex: 100,
+      }}
+    >
       <HotelInfo />
       <SearchContent />
     </Box>

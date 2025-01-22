@@ -2,7 +2,6 @@ import { Box, Button, IconButton, Typography } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ClearIcon from "@mui/icons-material/Clear";
-import React, { useState } from "react";
 
 export const InputWithPopUp = ({
   children,
@@ -59,7 +58,7 @@ export const PopUp = ({ handleCloseClick, handleDoneClick, children }) => {
         alignItems: "end",
         p: 1,
         borderRadius: 3,
-        zIndex: 1,
+        zIndex: 3,
         top: 70,
         position: "absolute",
         backgroundColor: "white",
