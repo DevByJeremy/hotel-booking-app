@@ -6,7 +6,7 @@ import RoomCardList from "./RoomCardList";
 const Rooms = () => {
   return (
     <Box sx={{ backgroundColor: "#f4f4f4", pt: 7, pb: 7 }}>
-      <Box sx={{ width: "60%", m: "auto" }}>
+      <Box sx={{ width: "50%", m: "auto" }}>
         <Typography
           variant="h5"
           sx={{
